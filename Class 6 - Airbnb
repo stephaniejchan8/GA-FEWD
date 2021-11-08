@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Airbnb | Melbourne</title>
+
+    <!-- Google Font embed -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Airbnb Melbourne">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/logo.png" alt="Airbnb logo"></a>
+      </div>
+      <nav>
+          <ul>
+            <li><a class="font-black" href="#">Sign Up</a></li>
+            <li><a class="font-black" href="#">Login</a></li>
+          </ul>
+        </nav>
+<!--       <div class="logo">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/logo.png" alt="Airbnb logo">
+      </div>
+      <a href="#"><div class="nav-item">Sign Up</div></a>
+      <a href="#"><div class="nav-item">Login</div></a> -->
+    </header>
+    <section class="main-image">
+      <h1 class="Melbourne font-white">Melbourne</h1>
+      <p class="byline font-white">From footy to fashion, the cultural capital of Australia dares to stay on the cutting edge.</p>
+      <a class="find-neighborhood font-white" href="#"><div>Find a neighborhood</div></a>
+    </section>
+    <section class="locals">
+      <div class="locals-items">
+        <h3>Locals Love</h3>
+        <div class="locals-details">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/heart.png" alt="heart icon">
+          <p>Tourists mispronouncing Melbourne (it's mel-bin), crowded trains & trams, ticket inspectors, unpredictable weather, the price of real estate, Sydney</p>
+        </div>
+      </div>
+      <div class="locals-items">
+        <h3>Locals Complain About</h3>
+        <div class="locals-details">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/chat.png">
+          <p>Coffee, talking about coffee, brunch, footy in winter, cricket in summer, laneways & hidden bars, street art & buskers, debating which side of the river is better</p>
+        </div>
+      </div>
+    </section>
+    <section class="featured-neighborhoods">
+      <h2>Featured Neighborhoods</h2>
+      <h4>Explore 19 Melbourne neighborhoods. Which are right for you?</h4>
+      <div class="three-neighborhoods">
+        <div class="neighborhood-icon">
+          <div class="fitzroy neighborhood-main">
+            <h5 class="font-white">Fitzroy</h5>
+            <p class="font-white">Baristas, Beards, Bikes.</p>
+          </div>
+          <div class="neighborhood-byline">
+            <p>Hip Terrace Houses Anything Goes Vintage Clothing</p>
+          </div>
+        </div>
+        <div class="neighborhood-icon">
+          <div class="st-kilda neighborhood-main">
+            <h5 class="font-white">St Kilda</h5>
+            <p class="font-white">Backpackers and packed sand.</p>
+          </div>
+          <div class="neighborhood-byline">
+            <p>Cake Shops Backpackers Hippies Beach Culture</p>
+          </div>
+        </div>
+        <div class="neighborhood-icon">
+          <div class="CBD neighborhood-main">
+            <h5 class="font-white">Central Business District</h5>
+            <p class="font-white">Big Business. Little laneways.</p>
+          </div>
+          <div class="neighborhood-byline">
+            <p>Coffee Culture Working Nine To Five Federation Square Flinders Street Station</p>
+          </div>
+        </div>
+      </div>
+     <a class="find-neighborhood font-white" href="#"><div>Find a neighborhood</div></a>
+    </section>
+    <footer>
+      <hr class="footer-line">
+      <p class="font-white">&copy; Airbnb, Inc.</p>
+    </footer>
+<!--     <p>Make it look like this:</p>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/airbnb-solution-image.jpg" alt="solution" style="width:1200px;" /> -->
+  </body>
+</html>
+
+CSS:
+body {
+  font-family: 'Nunito', Arial, sans-serif;
+  font-size: 12px;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0.2% 2.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.1px;
+}
+
+nav ul li:last-child {
+  padding-right: 0;
+}
+
+.font-black {
+  color: black;
+}
+
+.main-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  padding: 19% 0;
+  text-align: center;
+}
+
+.main-image:hover {
+  background-color: rgba(0,0,0,0.35);
+  background-blend-mode: overlay;
+}
+
+.Melbourne {
+  font-size: 100px;
+  padding: 0;
+  line-height: 0.8em;
+  margin: 0;
+}
+
+.byline {
+  font-size: 26px;
+  font-weight: 600;
+  max-width: 35%;
+  padding: 0;
+  margin: 1.3% 0;
+  letter-spacing: 0.01px;
+}
+
+.font-white {
+  color: white;
+}
+
+.find-neighborhood {
+  background: #ff5358;
+  border-radius: 6px;
+  padding: 15px;
+  width: 375px;
+  font-size: 26px;
+  font-weight: 600;
+  box-shadow: 0 3px #e00007;
+}
+
+.find-neighborhood:hover {
+  background: #e00007;
+}
+
+.locals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4% 10px;
+  background: #f5f5f5;
+}
+
+.locals-items {
+  border: 1px solid #9c9c9c;
+  width: 47.5%;
+}
+
+.locals h3 {
+  background: #ebeae6;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 2% 3%;
+}
+
+.locals-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  background: white;
+  padding: 1% 10% 1% 0;
+}
+
+.locals-details img {
+  padding: 18px;
+  height: 100px;
+}
+
+.featured-neighborhoods {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 4% 0.5% 6% 0.5%;
+}
+
+.featured-neighborhoods h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.featured-neighborhoods h4 {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 0.7% 0 2% 0;
+}
+
+.three-neighborhoods {
+  display: flex;
+  justify-content: space-between;
+  height: 600px;
+  margin-bottom: 55px;
+  width: 93%;
+}
+
+.three-neighborhoods h5 {
+  font-size: 38px;
+  letter-spacing: 1px;
+}
+
+.neighborhood-icon {
+  width: 31.7%;
+  height: 100%;
+}
+
+.fitzroy {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg);
+}
+
+.st-kilda {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg");
+}
+
+.CBD {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg");
+}
+
+.neighborhood-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  height: 80%;
+  padding: 0;
+}
+
+.neighborhood-main:hover {
+  background-color: rgba(0,0,0,0.35);
+  background-blend-mode: overlay;
+}
+
+.neighborhood-main p {
+  font-size: 20px;
+}
+
+.neighborhood-byline {
+  background: #efefef; 
+  margin: 0;
+  height: 22%;
+  border: 1.5px solid #d6d6d6;
+  border-top: none;
+}
+
+.neighborhood-byline p {
+  margin: 0;
+  padding: 30px 40px 0 30px;
+  text-align: left;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+footer {
+  background: #2b2b2b;
+  text-align: center;
+  height: 10%;
+  padding-top: 3.7%;
+}
+
+.footer-line {
+  border: 2px solid #525252;
+  width: 90%;
+}
+
+footer p {
+  font-size: 20px;
+  padding: 2.5% 0 3.7% 0;
+}
+
