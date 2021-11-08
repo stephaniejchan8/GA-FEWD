@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href=”/normalize.css” rel=”stylesheet”>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <title>GA Press Release</title>
+  </head>
+  <body>
+      <img class="logo" src="https://res.cloudinary.com/dr5iclm3d/image/upload/v1548206606/logo.png" alt="GA logo" height=100px>
+    <h1 class="heading">General Assembly Offers Classes and Workshops Worldwide</h1>
+    <img class="logo-background" src="https://res.cloudinary.com/dr5iclm3d/image/upload/v1548206606/logo.png" alt="GA logo" height=400px>
+    <h2 class="red heading">For Immediate Release</h2>
+    <main>
+      <p>
+      General Assembly, which started in New York as a startup incubator, now offers classes and workshops in technology, design, and entrepreneurship, with campuses around the world in:
+      </p>
+      <ul>
+        <li>Atlanta</li>
+        <li>Austin</li>
+        <li>Boston</li>
+        <li>Chicago</li>
+        <li>Hong Kong</li>
+        <li>London</li>
+        <li>Los Angeles</li>
+        <li>Melbourne</li>
+        <li>New York City</li>
+        <li>San Francisco</li>
+        <li>Seattle</li>
+        <li>Singapore</li>
+        <li>Sydney</li>
+        <li>Washington D.C</li>
+      </ul>
+      <hr>
+      <p id="more-information">
+        For more information, visit <strong>General Assembly's</strong> <a href="https://generalassemb.ly">Website</a> or our <a href="https://generalassemb.ly/why-ga-is-worth-it">About</a> page
+      </p>
+    </main>
+  </body>
+</html>
+
+.logo-background {
+  position: absolute;
+  opacity: 10%;
+  z-index: -1;
+  top: 10px;
+  left: 775px;
+}
+
+body {
+  padding: 5px 100px 50px 45px;
+  background-color: rgba(220, 225, 220, 0.4);
+  max-width: 950px;
+}
+
+main {
+  font-family: 'Cabin', sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 18px;
+}
+
+.heading {
+  letter-spacing: 0.01px;
+  max-width: 850px;
+}
+
+h1 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 45px;
+  padding: 0px;
+  margin: 12px 0;
+  line-height: 110%;
+}
+
+.red {
+  color: rgb(226,28,35);
+}
+
+h2 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  margin: 25px 0;
+}
+
+p {
+  line-height: 140%;
+}
+
+ul {
+  font-weight: bold;
+  list-style-type: none;
+  position: relative;
+  margin: 45px 100px 70px 70px;
+  text-align: center;
+  max-width: 600px;
+}
+
+li {
+  display: inline;
+  padding: 0 15px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+hr {
+  border: 1px dotted black;
+  width: 750px;
+  margin: 0px 20px 15px 45px;
+  position: relative;
+}
+
+#more-information {
+  position: relative;
+  font-size: 15px;
+  margin: 0 17%;
+}
+
+@media (max-width: 950px) {
+  .logo-background {
+    position: absolute;
+    opacity: 10%;
+    z-index: -1;
+    top: 10px;
+    left: 600px;
+  }
+  
+  hr {
+    width: 600px;
+    margin: 0 auto 10px;
+  }
+}
