@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href=”/normalize.css” rel=”stylesheet”>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nomad Tribe</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <img id="logo" src="https://i.imgur.com/HjadCpF.jpg" alt="logo">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a class="middle" href="#">News</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="intro">
+      <h2>A nomadic life is dawning on us</h2>
+    </div>
+    <div class="gallery">
+      <div class="items1">
+        <a href="#"><img class="image1" src="https://i.imgur.com/5Uglg9Q.jpg" alt="Olivia's van"></a>
+        <a class="item-caption" href="#" >Olivia</a>
+      </div>
+      <div class="items2">
+        <a href="#"><img class="image2" src="https://i.imgur.com/a1L5Nyt.jpg" alt="Samantha's van"></a>
+        <a class="item-caption" href="#" >Samantha</a>
+      </div>
+      <div class="items3">
+        <a href="#"><img class="image3" src="https://i.imgur.com/rFvyOH8.jpg" alt="Mark's van"></a>
+        <a class="item-caption" href="#">Mark</a>
+      </div>
+    </div>
+    <div class="marketing-campaign">
+      <h2>
+        It has never been easier to live outdoors in comfort and style.<br /><br />
+        <a class="join-tribe" href="#">Join the Nomad Tribe</a>
+      </h2>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; Stephanie J Chan, 2021</p>
+  </footer>
+</body>
+</html>
+
+CSS:
+header {
+  background: rgba(150, 200, 200, 0.8);
+  height: 220px;
+  border-bottom: 4px solid white;
+}
+
+nav {
+  position: relative;
+  margin: 0;
+  padding: 35px;
+}
+
+#logo {
+  height: 150px;
+}
+
+nav ul {
+  display: inline-block;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  list-style-type: none;
+}
+
+nav ul li, nav ul li a {
+  font-family: 'Pacifico', cursive;
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 25px;
+  color: white;
+}
+
+.middle {
+  padding: 0 30px;
+  border-left: 2px solid #FFF;
+  border-right: 2px solid #FFF;
+}
+
+.intro {
+  background-image: url(https://i.imgur.com/KssVhpu.jpg);
+  height: 450px;
+  position: relative;
+  padding: 0;
+}
+
+.intro h2 {
+  position: absolute;
+  width: 700px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  font-size: 60px;
+  text-align: center;
+  word-spacing: 0.13em;
+  color: #022;
+}
+
+.intro, .gallery, .marketing-campaign {
+  border-bottom: 4px solid white;
+}
+
+.gallery {
+  background: rgba(150, 230, 220, 0.8);
+  margin: 0;
+  padding: 0;
+  height: 500px;
+}
+
+.items1, .items2, .items3 {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  width: 33%;
+}
+
+.image1, .image2, .image3 {
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 250px;
+  width: 350px;
+  border-radius: 100px;
+  border: 4px solid white;
+}
+
+.item-caption {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  color: white;
+  font-size: 26px;
+}
+
+.item-caption, h2 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.marketing-campaign {
+  position: relative;
+  height: 500px;
+  background-image: url(https://i.imgur.com/LCwEw8m.jpg);
+  background-position: cover;
+}
+
+.marketing-campaign h2 {
+  position: absolute;
+  width: 700px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(110,110,160, 0.3);
+  margin: 0;
+  padding: 30px;
+  border-radius: 25px;
+  font-size: 45px;
+  text-align: center;
+  word-spacing: 0.13em;
+  color: #fd3;
+}
+  
+.join-tribe {
+  font-size: 35px;
+  color: #5da;
+}
+
+footer {
+  position: relative;
+  background: rgba(150, 200, 200, 0.8);
+  height: 40px;
+}
+
+footer p {
+  position: absolute;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  right: 1%;
+  top: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translate(0, -50%);
+}
